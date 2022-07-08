@@ -30,8 +30,8 @@
 
     Private Sub FPlayersRecord_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FMenu.CenterForm(Me, FMenu)
-        Me.Icon = New Icon("image\\icon\\record.ico")
-        Me.Bsorted.Image = New Bitmap(Image.FromFile("image\\ascending.png"),
+        Me.Icon = New Icon("..\\..\\image\\icon\\record.ico")
+        Me.Bsorted.Image = New Bitmap(Image.FromFile("..\\..\\image\\ascending.png"),
                                           New Size(Me.Bsorted.Width - 10, Me.Bsorted.Height - 10))
     End Sub
 
@@ -86,7 +86,7 @@
                 Me.LBtimeOfRecord.Items.Add(Players.convSeconds(sortedPlayersTab(i).details.timeOfBestRecord))
             Next i
             isAscendingOrder = True
-            Me.Bsorted.Image = New Bitmap(Image.FromFile("image\\ascending.png"),
+            Me.Bsorted.Image = New Bitmap(Image.FromFile("..\\..\\image\\ascending.png"),
                                           New Size(Me.Bsorted.Width - 10, Me.Bsorted.Height - 10))
         Else
             For i As Integer = Players.getNbPlayer - 1 To 0 Step -1
@@ -95,7 +95,7 @@
                 Me.LBtimeOfRecord.Items.Add(Players.convSeconds(sortedPlayersTab(i).details.timeOfBestRecord))
             Next i
             isAscendingOrder = False
-            Me.Bsorted.Image = New Bitmap(Image.FromFile("image\\descending.png"),
+            Me.Bsorted.Image = New Bitmap(Image.FromFile("..\\..\\image\\descending.png"),
                                           New Size(Me.Bsorted.Width - 10, Me.Bsorted.Height - 10))
         End If
     End Sub

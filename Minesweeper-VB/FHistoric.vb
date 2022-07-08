@@ -17,7 +17,7 @@
 
     Private Sub FHistoric_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FMenu.CenterForm(Me, FMenu)
-        Me.Icon = New Icon("image\\icon\\historic.ico")
+        Me.Icon = New Icon("..\\..\\image\\icon\\historic.ico")
     End Sub
 
     Private Sub Breturn_Click(sender As Object, e As EventArgs) Handles Breturn.Click

@@ -58,13 +58,13 @@
 
         Me.Bexit.Focus()
 
-        Dim optionImg As Image = Image.FromFile("image\\option.png")
+        Dim optionImg As Image = Image.FromFile("..\\..\\image\\option.png")
         Me.Boptions.Image = New Bitmap(optionImg, New Size(30, 30))
 
-        Dim logoImg As Image = Image.FromFile("image\\logo.png")
+        Dim logoImg As Image = Image.FromFile("..\\..\\image\\logo.png")
         Me.PBlogo.Image = New Bitmap(logoImg, New Size(PBlogo.Width, PBlogo.Height))
 
-        Me.Icon = New Icon("image\\icon\\menu.ico")
+        Me.Icon = New Icon("..\\..\\image\\icon\\menu.ico")
     End Sub
 
     Private Sub CBnomDefaultText()

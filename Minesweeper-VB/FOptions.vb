@@ -112,7 +112,7 @@
         Theme()
         FMenu.CenterForm(Me, FMenu)
 
-        Me.Icon = New Icon("image\\icon\\option.ico")
+        Me.Icon = New Icon("..\\..\\image\\icon\\option.ico")
 
         ' indicate default settings
         Me.Beasy.BackColor = Color.Transparent

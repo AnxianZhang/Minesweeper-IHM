@@ -125,7 +125,7 @@
         Me.Ttimer.Font = New Font("", 20, FontStyle.Bold)
         Me.Ttimer.Enabled = False
 
-        Dim img As Image = Image.FromFile("image\\drapeau.png")
+        Dim img As Image = Image.FromFile("..\\..\\image\\drapeau.png")
         Me.Bnbflags.Image = New Bitmap(img, New Size(30, 30))
         Me.Bnbflags.ImageAlign = ContentAlignment.MiddleLeft
         Me.Bnbflags.BackColor = Color.Transparent
@@ -134,7 +134,7 @@
         Me.Bcmdchange.BackColor = Color.MidnightBlue
         Me.Bcmdchange.ForeColor = Color.White
 
-        Me.Icon = New Icon("image\\icon\\game.ico")
+        Me.Icon = New Icon("..\\..\\image\\icon\\game.ico")
 
         'timer
         Me.TimerGame.Interval = 1000
@@ -190,7 +190,7 @@
                             btn.Text = content
                         Else
                             btn.BackColor = Color.GhostWhite
-                            Dim img As Image = Image.FromFile("image\\mine.png")
+                            Dim img As Image = Image.FromFile("..\\..\\image\\mine.png")
                             btn.Image = New Bitmap(img, New Size(30, 30))
                         End If
                     Else
