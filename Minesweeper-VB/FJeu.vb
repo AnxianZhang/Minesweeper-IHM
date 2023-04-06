@@ -177,7 +177,7 @@
                     Dim state As BoxOfGrid.BoxState = Grid.getBoxState(Utile.numOfBox(btn.Name))
                     Dim content As UInteger = Grid.getBoxValue(Utile.numOfBox(btn.Name))
                     If state = BoxOfGrid.BoxState.MARK Then
-                        Dim img As Image = Image.FromFile("image\\drapeau.png")
+                        Dim img As Image = Image.FromFile("..\\..\\image\\drapeau.png")
                         btn.BackColor = Color.GhostWhite
                         btn.Image = New Bitmap(img, New Size(30, 30))
                     ElseIf state = BoxOfGrid.BoxState.UNMASK Then
